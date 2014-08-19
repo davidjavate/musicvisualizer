@@ -1,0 +1,65 @@
+
+<!doctype html>
+<head>
+<title>Music Visualizer</title>
+
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://bootswatch.com/slate/bootstrap.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+
+		<style>
+	body {
+		background-image: url("http://sro.pocketprotectormedia.com/wp-content/uploads/2014/04/Lights-Background8-LQ.jpg ");
+
+	}
+
+  .jumbotron {
+
+        margin-right: auto;
+        margin-left: auto;
+        width: 990px;
+        height: 350px;
+    }
+
+	</style>
+
+</head>
+
+<body>
+
+<div class ="container-fluid">
+
+        <div class="page-header">
+        <h1>Lost in the Machine - Hyde Street</h1>
+                  <h2>Music Visualizer</h2>
+
+                  <p><button style="display: block" class="btn btn-primary btn-lg" role="button">Play/pause</button>
+                  </p>
+
+        </div>
+
+        <div class ="jumbotron">
+
+                  <canvas id="canvasID" width="990" height="300"></canvas>
+
+        </div>
+
+      <h4>Music: "Hyde Street" by Lost in the Machine aka Patrick Gil and David Javate, available on <a href="http://www.beatport.com">Beatport</a></h4>.
+
+</div>
+
+
+<script src="/javascript/shared.js"></script>
+<script src="/javascript/visualizer-sample.js"></script>
+
+
+<script>
+var sample = new VisualizerSample();
+document.querySelector('button').addEventListener('click', function() {
+  sample.togglePlayback();
+});
+</script>
+
+
+  </body>
+</html>
